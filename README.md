@@ -34,6 +34,8 @@ npm run dev      # con nodemon
 npm start        # sin nodemon
 ```
 
+En PowerShell (en lugar de `cp`): `Copy-Item .env.example .env`
+
 ## Endpoints
 
 ### Services
@@ -72,6 +74,22 @@ Ejemplo de body para `POST /api/bookings`:
   "date": "2026-08-20",
   "time": "15:30"
 }
+```
+
+## Ejemplos de prueba (curl)
+
+```bash
+# Services
+curl http://localhost:3000/api/services
+curl http://localhost:3000/api/services/1
+curl -X POST http://localhost:3000/api/services -H "Content-Type: application/json" -d '{"name":"Masaje","price":2500,"duration":50}'
+curl -X PUT http://localhost:3000/api/services/1 -H "Content-Type: application/json" -d '{"price":1800}'
+curl -X DELETE http://localhost:3000/api/services/3
+
+# Bookings
+curl -X POST http://localhost:3000/api/bookings -H "Content-Type: application/json" -d '{"user":"juan.perez@mail.com","date":"2026-08-25","time":"17:00"}'
+curl http://localhost:3000/api/bookings/1
+curl -X POST http://localhost:3000/api/bookings/1/services/2
 ```
 
 ## Arquitectura
