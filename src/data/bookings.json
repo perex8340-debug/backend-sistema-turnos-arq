@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "user": "ana.gomez@mail.com",
+    "date": "2026-08-15",
+    "time": "10:00",
+    "services": [1]
+  },
+  {
+    "id": 2,
+    "user": "carlos.lopez@mail.com",
+    "date": "2026-08-15",
+    "time": "12:30",
+    "services": [2, 3]
+  }
+]

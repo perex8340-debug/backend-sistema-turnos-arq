@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Corte de cabello",
+    "price": 1500,
+    "duration": 45
+  },
+  {
+    "id": 2,
+    "name": "Tinte",
+    "price": 3500,
+    "duration": 90
+  },
+  {
+    "id": 3,
+    "name": "Peinado",
+    "price": 2000,
+    "duration": 60
+  }
+]
